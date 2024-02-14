@@ -1,0 +1,43 @@
+Microsoft Windows [Version 10.0.22621.2715]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>d:
+
+D:\>cd python
+
+D:\Python>cd::
+The system cannot find the drive specified.
+
+D:\Python>cd/
+
+D:\>md Morning
+
+D:\>cd Morning
+
+D:\Morning>django-admin startproject crm
+
+D:\Morning>cd crm
+
+D:\Morning\crm>python manage.py startapp crmapp
+
+D:\Morning\crm>
+
+
+
+PS D:\Morning> cd crm
+PS D:\Morning\crm> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+December 16, 2023 - 11:11:33
+Django version 5.0, using settings 'crm.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[16/Dec/2023 11:11:44] "GET / HTTP/1.1" 200 10629
+Not Found: /favicon.ico
+[16/Dec/2023 11:11:44] "GET /favicon.ico HTTP/1.1" 404 2107

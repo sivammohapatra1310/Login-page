@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>calculate</title>
+
+</head>
+
+ 
+<body>
+ 
+    <table>
+        <tr>
+            <th>USERID</th>
+            <th>USERMAME</th>
+            <th>USEREMAIL</th>
+            <th>USER PASSWORD</th>
+        </tr>
+        {% for user in user %}
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.uname}}</td> 
+            <td>{{user.uemail}}</td>
+            <td>{{user.upassword}}</td>
+            <td><a href="delete/{{user.id}}">DELETE</a></td>
+            <td><a href="edit/{{user.id}}">UPDATE</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+ 
+</body>
+ 
+</html>
